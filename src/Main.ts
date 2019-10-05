@@ -1,5 +1,6 @@
 import Phaser from 'phaser'
 import GameScene from './GameScene'
+import TitleScreenScene from './TitleScreenScene'
 
 class Startup {
     public static main(): number {
@@ -15,7 +16,7 @@ class Startup {
             render: ({
                 pixelArt: true,
             }),
-            scene: new GameScene(sceneConfig)
+            scene: new TitleScreenScene(sceneConfig)
         });
 
         return 0;
