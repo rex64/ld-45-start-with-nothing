@@ -21,6 +21,12 @@ class Startup {
             render: {
                 pixelArt: true
             },
+            physics: {
+                default: "arcade",
+                arcade: {
+                  gravity: { y: 0 }
+                }
+            },
             // scene: new TitleScreenScene(sceneConfig)
             scene: new DungeonScene(sceneConfig)
         });
